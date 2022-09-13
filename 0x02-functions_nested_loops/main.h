@@ -1,11 +1,11 @@
-#ifndef HOLBERTON_H_INCLUDED
-#define HOLBERTON_H_INCLUDED
+#ifindef MAIN_H[D[D[D[D[D[D[D[D[D[D[[C[C[C[C[C[C[C[C[ndef MAIN_H
+#define MAIN_H
 
 int _putchar(char);
-void ptint_alphabet(void);
-void [A[C[r[B[D[Dprint_alphabet_x10(void);
-int_islower(int c);
-int _[A[D[D _[Bi[A[Di[C[C[Cislower int(int c);[B[D[D[D[D[D[D[D[D[D[D[D[D[salpha(int c);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
 int print_last_digit(int);
