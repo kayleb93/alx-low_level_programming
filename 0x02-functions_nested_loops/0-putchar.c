@@ -1,19 +1,16 @@
-#include <unistd.h>
+#include "main.h"
 
-/**main - ptints putchar
-*Return: 0
+/**
+*void print_alphabet[D[D[D[D[D[D[D[D[D[D[D[D[C[C[C[C[C[C[C[C[C[C[C[C[print_alphabet -> prints the lowercase alphabets 
 */
-int main(void)
-{
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
 
-	return (0);
+void print_alphabet(void)
+{
+	int j;
+
+	for (j = 'a' ; j <= 'z' ; j++)
+	{
+		_putchar(j);
+	}
+	_putchar('\n');
 }
