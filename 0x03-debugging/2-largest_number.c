@@ -11,15 +11,15 @@ int largest_number(int a, int b, int c)
 int largest;
 if (a >= b && a >= c)
 {
-largest =a;
+	largest = a;
 }
 else if (b > a && a > c)
 {
-largest = b;
+	largest = b;
 }
-else
+else if (c > b)
 {
-largest = c;
+	largest = c;
 }
 return (largest);
-}[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C= a && b >= c)[B[B[B[B[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[B[B[B[B[D
+}
