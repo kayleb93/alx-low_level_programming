@@ -4,7 +4,7 @@ C - more function,more nested loops
 
 1 - Write a function that checks for a digit (0 through 9).
 
-2 - Write a function that multiplieWrite a function[C[C[C[C[C[C[Cs two integers.
+2 - Write a function that multiplieWrite a function is two integers.
 
 3 - Write a function that prints the numbers,from 0 to 9,followed by a new line.
 
@@ -18,6 +18,6 @@ C - more function,more nested loops
 
 8 - Write a function that draws a square, followed by a new line.
 
-9 - fizz-Buzz - Write a program that prints the numbers from 1 to 100,followed by a new line,But for mples of three print fizz the number and for the multiples of five print Buzz, for numbers which are multiples of both three and five print fizzBuzz[A[C[C[C[C[C[CBuzz[B[B[D[D[D[D[D[D[D[D[D[D.
+9 - fizz-Buzz - Write a program that prints the numbers from 1 to 100,followed by a new line,But for mples of three print fizz the number and for the multiples of five print Buzz, for numbers which are multiples of both three and five print fizzBuzz
 
 10 - Write a function that prints a triangle, followed by a new line.
