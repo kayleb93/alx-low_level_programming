@@ -10,7 +10,7 @@
  * Return: product of a & b
  */
 
-inpu mul(int a, int b)
+int mul(int a, int b)
 {
 int product = a * b;
 
