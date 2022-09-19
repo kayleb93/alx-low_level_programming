@@ -3,10 +3,10 @@
 #include "main.h"
 
 /** 
-*print_rev - Prints a string in reverse order
-*@s: String to reverse
-*Return: nothing
-*/
+ *print_rev - Prints a string in reverse order
+ *@s: String to reverse
+ *Return: nothing
+ */
 
 void print_rev(char *s)
 {
