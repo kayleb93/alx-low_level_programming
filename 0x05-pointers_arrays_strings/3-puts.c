@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
+
 /**
  *_puts - prints a string
  * @str: string to print
@@ -13,9 +12,9 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	while ((*str + i) != '\0')
+	while (*(str + i) != '\0')
 	{
-		putchar((*str + i));
+		putchar(*(str + i));
 		i++;
 	}
 	putchar(10);
