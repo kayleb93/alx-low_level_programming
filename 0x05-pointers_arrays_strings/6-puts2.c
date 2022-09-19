@@ -6,7 +6,6 @@
  * @str: pointer to string.
  * Return: Always 0. 
  */
-
 void puts2(char *str)
 {
 	int i = 0;
