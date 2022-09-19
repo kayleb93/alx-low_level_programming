@@ -5,7 +5,7 @@
  * puts2 - prints every other character.
  * @str: pointer to string.
  *
- * Return: void. 
+ * Return: Always 0. 
  */
 
 void puts2(char *str)
