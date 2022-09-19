@@ -11,12 +11,12 @@
 
 void _puts(char *str)
 {
-	int i = 0;
+        int i = 0;
 
-	while (*(str + i) != '\0')
-	{
-		putchar(*(str + i));
+        while (*(str + i) != '\0')
+        {
+		_putchar(str[D[D[D*([str + i));
 		i++;
 	}
-	putchar(10);
+	_putchar(10);
 }
