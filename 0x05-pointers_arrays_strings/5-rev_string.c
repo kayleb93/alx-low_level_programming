@@ -5,8 +5,9 @@
  *
  * Return: void.
  */
-void rev_string(char *s);
+void rev_string(char *s)
 {
+	char s[10] = "My School";
 	int i, j, k, tmp;
 
 	i = 0;
