@@ -6,7 +6,6 @@
  *
  * Return: void.
  */
-int main(void)
 
 void rev_string(char *s)
 {
