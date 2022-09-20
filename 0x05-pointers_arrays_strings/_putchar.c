@@ -1,5 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <unistd.h>
 
-#endif[A[A[C[C[C[C[C[C[C[C
-int _putchar(char c);[B[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[B[C[C[C[C[C[C
+/**
+ *
+ * -putchar - writes the character c to stdout
+ *  @c: The character to print
+ *
+ *  Return: On success 1.
+ *  On error, -1 is returned, and error is there returned
+ */
+
+int _putchar(char c)
+{
+return (write(1, &c, 1));
+}
