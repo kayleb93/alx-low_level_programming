@@ -1,15 +1,14 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- *_puts -> this is a function that puts
- * @str: a param to _puts function
+ *_putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and error is there returned
  */
 
-void _puts(char *str)
+void _putchar(char c)
 {
-	for (; *str != '\0'; str++)
-	{
-		_putchar(*str);
-	}
-	_putchar('\n');
+return (write(1, &c, 1));
 }
