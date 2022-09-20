@@ -1,14 +1,23 @@
-#include <unistd.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
- *_putchar - writes the character c to stdout
- * @c: The character to print
+ * _puts - prints a string
+ * @str: string to print
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is there returned
+ * Description: prints a string
+ * On success: returns no error
  */
 
-void _putchar(char c)
+void _puts(char *str)
 {
-return (write(1, &c, 1));
+	int i = 0;
+
+	while (*(str + i) != '\0')
+	{
+		putchar(*(str + i));
+		i++;
+	}
+	putchar(10);
 }
+
