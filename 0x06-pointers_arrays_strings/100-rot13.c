@@ -6,7 +6,7 @@
  *
  * Return: address of s
  */
-char *rot13(char *s)
+char *rot13(char *str)
 {
 	int i, j;
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -23,5 +23,5 @@ char *rot13(char *s)
 			}
 		}
 	}
-	return (s);
+	return (str);
 }
