@@ -1,8 +1,7 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*print_diagonal - prints a diagonal
+* more_numbers ->
 *@n: parameter
 *Return: returns nothing
 */
@@ -20,8 +19,9 @@ void print_diagonal(int n)
 				_putchar(' ');
 			}
 
-			_putchar('\\');
-
+	                _putchar('\\');
+			_putchar('\n');
+             
 			if (len == (n - 1))
 			{
 				continue;
@@ -29,5 +29,5 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}	
 	}
-	_putchar('\n');
+	
 }
