@@ -6,7 +6,7 @@
  *  Return: returns length as integer;
  */
 
-char *cap_string(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
