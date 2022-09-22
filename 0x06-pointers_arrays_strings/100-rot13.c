@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * rot13 - Encodes a string using rot13.
- * @str: The string to be encoded.
+ * rot13 - Encodes a string using rot13
+ * @str: The string to encode
  *
  * Return: address of s
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i, j;
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -23,5 +23,6 @@ char *rot13(char *str)
 			}
 		}
 	}
-	return (str);
+	return (s);
+
 }
