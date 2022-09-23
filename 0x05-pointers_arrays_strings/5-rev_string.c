@@ -1,7 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * rev_strings  - reverse the string.
+ * rev_strings  - prints reverse string.
  * @s: pointer to string.
  *
  * Return: void.
@@ -9,22 +8,32 @@
 
 int main(void)
 {
-	int i, j, k, tmp;
+char *start_c, *end_c, c;
+int i, cout;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	k = 0;
-	j = i - 1;
+for (i = 0; s[i]; i++;)
+{
+length++;
+}
 
-	while (k < j)
-	{
-		tmp = s[k];
-		s[k] = s[j];
-		s[j] = tmp;
-		k++;
-		j--;
-	}
+cout = length;
+
+start_c = s;
+end_c = s;
+
+for (i = 0; i < cout - 1; i++)
+{
+end_c++;
+}
+	
+for (i = 0; i < cout - 2; i++)
+{
+
+c = *end_c;
+*end_c = *start_c;
+*start_c = c;
+
+start_c++;
+end_c--;
+}
 }
