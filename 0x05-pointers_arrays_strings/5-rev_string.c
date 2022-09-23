@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * rev_strings  - prints reverse string.
- * @s: pointer to string.
+ * rev_strings  - Reverses a string.
+ * @s: The string to be modified
  *
  * Return: void.
  */
@@ -18,7 +18,7 @@ void rev_string(char *s)
 		c++;
 	}
 
-	for (k = l; k < c; k++)
+	for (k = 1; k < c; k++)
 	{
 		a++;
 	}
