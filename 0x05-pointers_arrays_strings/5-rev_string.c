@@ -1,39 +1,31 @@
 #include "main.h"
+
 /**
  * rev_strings  - prints reverse string.
  * @s: pointer to string.
  *
  * Return: void.
  */
-
-int main(void)
+void rev_string(char *s)
 {
-char *start_c, *end_c, c;
-int i, cout;
+	int i, c, k;
+	char *a, aux;
 
-for (i = 0; s[i]; i++;)
-{
-length++;
-}
+	a = s;
 
-cout = length;
-
-start_c = s;
-end_c = s;
-
-for (i = 0; i < cout - 1; i++)
-{
-end_c++;
-}
-	
-for (i = 0; i < cout - 2; i++)
-{
-
-c = *end_c;
-*end_c = *start_c;
-*start_c = c;
-
-start_c++;
-end_c--;
-}
+	while (s[c] != '\0')
+	{
+		c++;
+	}
+	for (k = l; k < c; k++)
+	{
+		a++;
+	}
+	for (i = 0; i < (c / 2); i++)
+	{
+		aux = s[i];
+		s[i] = *a;
+		*a = aux;
+		a--;
+	}
 }
