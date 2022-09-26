@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * _strspn - locates a character in a string
  * @s: string to check
  * @c: character to check for
