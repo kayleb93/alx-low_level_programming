@@ -1,3 +1,8 @@
+/*
+ * File: 2-strchr.c
+ * Auth: learner sam
+ */
+
 #include "main.h"
 
 /**
@@ -18,5 +23,6 @@ char *_strchr(char *s, char c)
 	}
 	if (*(s + i) == c)
 		return (s + i);
+	
 	return (0);
 }
