@@ -1,7 +1,13 @@
+/*
+ * File: 1-memcpy.c
+ * Auth: san tech
+ */
+
 #include "main.h"
 
 /**
  * _memcpy - Copies @n bytes from the memory area pointed
+ * 	to by @src into that pointed to by @dest.
  * @dest: A pointer to the memory area to copy @src into.
  * @src: memory area to be copied from
  * @n: The number of bytes to copy from @src.
@@ -11,12 +17,12 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int index;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
 	
-	for (; i < n; i++)
-	{
-		dest[i] = src[i];
-	}
-
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
+	
 	return (dest);
 }
