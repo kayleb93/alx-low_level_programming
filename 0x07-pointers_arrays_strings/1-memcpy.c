@@ -1,8 +1,3 @@
-/*
- * File: 1-memcpy.c
- * Auth: sam tech
- */
-
 #include "main.h"
 
 /**
@@ -17,13 +12,11 @@
 
 void *_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned int index;
-	unsigned char *destination = dest;
-	const unsigned char *source = src;
+	unsigned int a;
 	
-	for (; index < n; index++)
+	for (a = 0; a < n; a++)
 	{
-		destination[index] = source[index];
+		dest[a] = src[a];
 	}
 	
 	return (dest);
