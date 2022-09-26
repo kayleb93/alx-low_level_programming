@@ -15,10 +15,8 @@
  * Return: A pointer to be filled memory area @s.
  *
  */
-
-char *_memset(char *s, char b, unsigned n)
+void *_memset(void *s, int c, size_t n)
 {
-
 	unsigned int index;
 	unsigned char *memory = s, value = c;
 
