@@ -1,35 +1,23 @@
-/*
- * File: 8-print_diagsums.c
- * Auth: voulmter
- */
-
 #include "main.h"
 #include <stdio.h>
 
 /**
- * print_diagsums - Prints the sum of the two diagonal
- * @a: The matrix of integers.
- * @size: The size of the matrix.
+ * print_diagsums - Prints the sum of the two diagonals of square matrix
+ *
+ * @a: The matrix 
+ * @size: The size 
  * 
- * Return: void
+ * Return: Nothing.
  */
 void print_diagsums(int *a, int size)
 {
-	int index, sum1 = 0, sum2 = 0;
+	int b, sum1 = 0, sum2 = 0;
 
-	for (index = 0; index < size; index++)
+	for (b = 0; b < size; b++)
 	{
-		sum1 += a[index];
-		a += size;
+		sum1 += a[(size + 1) * b];
+		sum2 += a[(size - 1) * (b + 1)];
 	}
 
-	a -= size;
-
-	for (index = 0; index < size; index++)
-	{
-		sum2 += a[index];
-		a -= size;
-	}
-
-	printf("%d, %d\n", sum1,sum2);
+	printf("%d, %d\n", sum1, sum2);
 }
