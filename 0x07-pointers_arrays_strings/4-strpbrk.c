@@ -2,24 +2,32 @@
 
 /**
  * _strpbrk - Searches a string for any of a set of bytes
- * @s: Thd string to be searched.
- * @accept: The set of bytes to be searched for.
+ * @s: source string
+ * @accept: accepted characters
  *
  * Return: pointer to byte in s that matches or NULL if no match
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, j;
-	
-	for(i = 0; s[i]; i++)
+	int a = 0, b;
+
+	while (s[a])
 	{
-		for(j = 0; accept[j]; j++)
+		b = 0;
+
+		while (accept[b])
 		{
-			if(s[i] == accept[i])
-				break;
+			if (s[a] == accept[b])
+			{
+				s += a;
+				return (s);
+			}
+
+			b++;
 		}
-		if(accept[j])
-			return(s + i);
+
+		a++;
 	}
-	return(0);
+
+	return ('\0');
 }
