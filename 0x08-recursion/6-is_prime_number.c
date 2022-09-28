@@ -30,10 +30,10 @@ return (0);
 }
 
 /**
- *is_prime_number - evaluate prime or not
- *@num: number
- *Return: return 1 prime - return 0 otherwise 
- */
+*is_prime_number - evaluate prime or not
+*@num: number
+*Return: return 1 prime - return 0 otherwise 
+*/
 int is_prime_number(int num)
 {
 
