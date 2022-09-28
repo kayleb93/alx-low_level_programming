@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * evaluate - recursion
- * @num: num
- * @iterator: number to iterate
- * Return: return 1 or 0
+ *evaluate - recursion
+ *@num: num
+ *@iterator: number to iterate
+ *Return: return 1 or 0
  */
 
 int evaluate_num(int num, int iterator)
@@ -30,11 +30,10 @@ return (0);
 }
 
 /**
- * is_prime_number - evaluate prime or not
- * @num: number
- * Return: return 1 prime - return 0 otherwise 
+ *is_prime_number - evaluate prime or not
+ *@num: number
+ *Return: return 1 prime - return 0 otherwise 
  */
-
 int is_prime_number(int num)
 {
 
