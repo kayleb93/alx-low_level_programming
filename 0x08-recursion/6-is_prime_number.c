@@ -6,7 +6,7 @@
  *
  * Return: 1 if n is prime, 0 otherwise
  */
-int is_prime_number(int n)
+int evaluate_num(int num, int iterator)
 {
 	int start = n / 2;
 
