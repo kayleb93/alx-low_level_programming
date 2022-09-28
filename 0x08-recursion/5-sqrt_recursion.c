@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * @i: integer
+ * @int: integer
  * @n: integer
  * Return: evaluate sqrt
  */
