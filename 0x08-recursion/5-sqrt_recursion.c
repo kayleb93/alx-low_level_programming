@@ -22,10 +22,10 @@ return (-1);
 return (-1);
 }
 /**
- * *_sqrt_recursion - evaluate sqrt
- *   *@n: integer
- *    *Return: sqrt_recursion
-i */
+ * _sqrt_recursion - evaluate sqrt
+ * @n: integer
+ * Return: sqrt_recursion
+ */
 int _sqrt_recursion(int n)
 {
 	int i = 0;
