@@ -26,7 +26,7 @@ total = atoi(argv[1]); /*Convert str to int*/
 
 if (total <= 0)
 {
-printf("0\n");
+printf("o\n");
 return (0);
 }
 
