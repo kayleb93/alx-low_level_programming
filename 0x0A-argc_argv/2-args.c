@@ -18,10 +18,10 @@ int count = 0;
 if (argc > 0)
 {
 /*WHILE - Print each arguments*/
-while (cout < argc)
+while (count < argc)
 {
-printf("%s\n", argv[cout]);
-cout++;
+printf("%s\n", argv[count]);
+count++;
 }
 }
 return (0);
