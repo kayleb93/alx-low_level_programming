@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-/**
- 
+/** 
  * main - adds numbers 
  * @argc: number of arguments passed to the function
  * @argv: arguments vector of pointers to strings  
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
 		{
 			if (isdigit(argv[i][j]) == 0)
 			{
-				puts("Error");
+				printf("Error");
 				return (1);
 			}
 		}
