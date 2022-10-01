@@ -2,50 +2,39 @@
 #include <stdlib.h>
 
 /**
- * main - function
- * @argc: length of argv
- * @argv: number of argument
- * Return: Always 0
+ * main - prints minimum number of coins to make change for an amount of money.
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: 0 if no errors, else 1
  */
-
 int main(int argc, char *argv[])
 {
-/*Declaring variables*/
-int position, total, change, aux;
-int coins[] = {25, 10, 5, 2, 1}; /*Array int*/
-
-position = total = change = aux = 0;
-
-if (argc != 2)
-{
-printf("Error\n");
-return (1);
-}
-
-total = atoi(argv[1]); /*Convert str to int*/
-
-if (total <= 0)
-{
-printf("o\n");
-return (0);
-}
-
-/*Declaring While*/
-
-while (coins[position] != '\0')
-
-{
-if (total >= coins[position]);
-{
-aux = (total / coins[position]);
-change += aux;
-total -= coins[position] * aux;
-}
-
-position++;
-
-}
-
-printf("%d\n", change);
-return (0);
+	int a, n = 0, i, t; 
+	int c[5] = {25, 10, 5, 2, 1};
+		
+		if (argc != 2)
+	{
+		puts("Error");
+		return (1);
+	}
+	a = atoi(argv[1]);
+	if (a <= 0)
+	{
+		puts("0");
+		return (1);
+	}
+	else
+	{
+		for (i = 0; i < 5; i++)
+		{
+			t = a / c[i];
+			a -= t * c[i];
+			n += t;
+			if (a == 0)
+				break;
+		}
+	}
+	printf("%d\n", n);
+	return (0);
 }
