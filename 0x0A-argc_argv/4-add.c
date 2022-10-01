@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string>
 
 /**
-
  * main - adds numbers 
  * @argc: number of arguments passed to the function
  * @argv: arguments vector of pointers to strings  
