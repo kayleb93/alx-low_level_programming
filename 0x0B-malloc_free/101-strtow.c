@@ -12,7 +12,7 @@ char **strtow(char *str);
 
 /**
  * word_len - locates the index marking the end of the
- * 	      first word contained within a string.
+ * first word contained within a string.
  * @str: The string to be searched.
  *
  * Return: The index marking the end of the initial word pointed to by str.
@@ -60,7 +60,7 @@ int count_words(char *str)
  * @str: The string to be split
  *
  * Return: if str - NULL, str - "", or the function fails - NULL.
- * 	   Otherwise - a pointer to an array of strings (words).
+ * Otherwise - a pointer to an array of strings (words).
  */
 char **strtow(char *str)
 {
@@ -86,8 +86,7 @@ char **strtow(char *str)
 		letters = word_len(str + index);
 
 		strings[w] = malloc(sizeof(char) * (letters + 1));
-		
-		if (strings[w] == NULL)
+                if (strings[w] == NULL)
 		{
 			for (; w >= 0; w--)
 				free(strings[w]);
