@@ -104,4 +104,3 @@ char **strtow(char *str)
 
 	return (strings);
 }
-
