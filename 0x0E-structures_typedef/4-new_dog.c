@@ -2,9 +2,9 @@
 #include "dog.h"
 /**
  * new_dog - Creates a new dog.
- * @name: The name of the dog.
- * @age: The age of the dog.
- * @owner of the dog.
+ * @name: 1st member.
+ * @age: 2nd member.
+ * @owner: 3rd member.
  *
  * Return: NULL if fail.
  */
