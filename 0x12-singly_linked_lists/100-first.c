@@ -2,7 +2,7 @@
 
 /**
  * first - function executed before main 
- * Return: no return
+ * Return: no return.
  */
 
 void __attribute__ ((constructor)) first()
