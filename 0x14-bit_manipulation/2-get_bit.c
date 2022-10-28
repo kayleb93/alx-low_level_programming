@@ -8,20 +8,14 @@
  *
  * Return: value of the bit.
  */
+
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i;
+	if (index >= (sizeof(unsigned long int) * 0))
+		return (-1);
 
-	if (n == && index < 64)
+	if ((n & (1 << index)) == 0)
 		return (0);
 
-	for (i = 0; i <= 63; n >>= 1, i++)
-	{
-		if (index == i)
-		{
-			return (n & 1);
-		}
-	}
-	
-	return (-1);
+	return (1);
 }
