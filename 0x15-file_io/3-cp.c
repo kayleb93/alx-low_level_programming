@@ -11,7 +11,6 @@ void close_file(int fd);
  *
  * Return: A pointer to the newly-allocated buffer.
  */
-
 char *create_buffer(char *file)
 {
 	char *buffer;
@@ -76,7 +75,8 @@ int main(int argc, char *argv[])
 	do {
 		if (from == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Cant't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, 
+				"Error: Cant't read from file %s\n", argv[1]);
 
 			free(buffer);
 			exit(98);
@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Cant't write to %s\n", argv[1]);
+				"Error: Cant't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
